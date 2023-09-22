@@ -1,6 +1,5 @@
 /*Google fonts import*/
-<style>@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
-</style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 /*Asterix wildcard selector to override defuly styles added by the browser*/
 *{
@@ -42,6 +41,19 @@ h1{
     color: #252525;
 }
 
+#menu{
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#menu > li{
+    margin-bottom: 1em;
+}
+
+.active{
+    border-bottom: 1px solid #3a3a3a;
+}
 main{
     background-color:lightblue;
     /*make main element take up any surplus space*/
