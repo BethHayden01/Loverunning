@@ -1,0 +1,19 @@
+/*Asterix wildcard selector to override defuly styles added by the browser*/
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+/*Header color*/
+header{
+    background-color:lightcoral;
+}
+/*main color*/
+main{
+    background-color:lightblue
+}
+/*footer color*/
+footer{
+    background-color:orange
+}
