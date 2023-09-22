@@ -1,7 +1,7 @@
 /*Google fonts import*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
-/*Asterix wildcard selector to override defuly styles added by the browser*/
+/*Asterix wildcard selector to override defult styles added by the browser*/
 *{
     padding: 0;
     margin: 0;
@@ -9,23 +9,26 @@
 }
 
 /*General styles*/
-body{
+body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /*generic project styles*/
+    /*Generic project styles*/
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
 
 /*Header color*/
-header{
+header {
     background-color: #ffffff;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width:100%;
     box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -61,11 +64,27 @@ nav{
     position: absolute;
     background-color: #ffffff;
     width: 100%;
-    left:0%;
+    left:0;
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
+    top: 100%;
 }
+
+/* Nav toggle*/
+#nav-toggle:checked~nav{
+    display:block;
+
+}
+
+#nav-toggle{
+    display:none;
+}
+
+.nav-toggle-label{
+    font-size: 2rem;
+}
+
 main{
     background-color:lightblue;
     /*make main element take up any surplus space*/
