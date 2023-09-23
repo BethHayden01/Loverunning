@@ -19,7 +19,9 @@ body {
 }
 
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -90,6 +92,7 @@ main {
     flex: 1 0 auto;
     margin-top: 47px;
 }
+
 /*Hero section styles*/
 #hero {
     height: 600px;
@@ -98,23 +101,53 @@ main {
     position: relative;
 
 }
+
 #cover-text {
     background-color: rgba(241, 109, 107, .7);
     font-size: 130%;
     position: absolute;
-    bottom:30px;
-    width:80%;
+    bottom: 30px;
+    width: 80%;
     min-height: 200px;
     padding-top: 40px;
     padding-left: 10px;
 
 }
 
-#cover-text > h2, #cover-text >h3{
-    color:#ffffff
+#cover-text>h2,
+#cover-text>h3 {
+    color: #ffffff
 }
+
+/*Reasons Section*/
+#reasons {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#reasons h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 200%;
+}
+
+#benefits-physical>div,
+#benefits-mental>div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#benefits p {
+    padding: 0 20px;
+}
+
+#benefits hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
+
 /* Footer */
-#social-networks{
+#social-networks {
     text-align: center;
     padding: 20px 0;
     display: flex;
@@ -122,10 +155,10 @@ main {
     list-style-type: none;
 }
 
-#social-networks i{
+#social-networks i {
     font-size: 160%;
     padding: 5%;
-    color:#3a3a3a;
+    color: #3a3a3a;
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -165,9 +198,9 @@ main {
         margin-top: 79px;
     }
 
-    #cover-text{
-        width:300px;
-        right:50px;
+    #cover-text {
+        width: 300px;
+        right: 50px;
     }
 }
 
